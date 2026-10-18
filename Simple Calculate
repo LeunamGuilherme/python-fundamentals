@@ -1,0 +1,50 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMkkvv45skbDe9fwetcJm2k",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LeunamGuilherme/python-fundamentals/blob/main/Simple%20Calculate\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "line1 = input().split()\n",
+        "A = int(line1[0])\n",
+        "B = int(line1[1])\n",
+        "C = float(line1[2])\n",
+        "line2 = input().split()\n",
+        "D = int(line2[0])\n",
+        "E = int(line2[1])\n",
+        "F = float(line2[2])\n",
+        "Valor_a_pagar = (B * C) + (E * F)\n",
+        "print(f'VALOR A PAGAR: R$ {Valor_a_pagar:.2f}')"
+      ],
+      "metadata": {
+        "id": "V2M9goJK7PX8"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
