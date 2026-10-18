@@ -1,0 +1,376 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMTcb+rP+fhF0gnBR6YD6wt",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LeunamGuilherme/python-fundamentals/blob/main/%201008%20-%20Salary\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number = float(input('Type a number: '))\n",
+        "if number > 0:\n",
+        "  print('The number is greater than 0')\n",
+        "elif number < 0:\n",
+        "  print('The number is less than 0')\n",
+        "else:\n",
+        "  print('The number is 0')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4kfJ_8cw7Vni",
+        "outputId": "2c1b600a-8f85-460d-f0be-5148f2d50b26"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Type a number: 12\n",
+            "The number is greater than 0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sex = input('Type M or F to know your sex: ')\n",
+        "if sex == 'M':\n",
+        "  print('You are a Man')\n",
+        "elif sex == 'F':\n",
+        "  print('You are a female')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3XUiMl1hBlGu",
+        "outputId": "29c941b2-d65d-4b40-82e7-135bd6dd5e68"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Type M or F to know your sex: M\n",
+            "You are a Man\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Receba a temperatura em Fahrenheit e exiba em graus celsius\n",
+        "temperature = float(input('Put the temperature in Fahrenheit: '))\n",
+        "temperature2 = (5/9)*(temperature - 32)\n",
+        "print(f\"The temperature in Celsius is: {temperature2}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9_DXNUzADrA0",
+        "outputId": "acefdbf1-23df-4f63-c1bc-6b79504c0adf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Put the temperature in Fahrenheit: 50\n",
+            "The temperature in Celsius is: 10.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(10)\n",
+        "B = int(9)\n",
+        "X = print(f\"the sum is {A + B} \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-dZvtvtCDusy",
+        "outputId": "5513c245-c4af-4bf1-82bb-5089bb2ccff3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "the sum is 19 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = 3.14159\n",
+        "R = float(input())\n",
+        "A = n * (R ** 2)\n",
+        "print(f\"A={A:.4f}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GHOBCy2ktCo6",
+        "outputId": "07828d9e-bfe7-4dcb-e61c-52b6f0c8effa"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "30\n",
+            "A=2827.4310\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "\n",
+        "SOMA = A + B\n",
+        "\n",
+        "print(f\"SOMA = {SOMA}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AFRTfluete-F",
+        "outputId": "47ecc813-f248-40bc-f69e-ec3601406bba"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "{3}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "PROD = A*B\n",
+        "print(f\"PROD = {PROD}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pAEAeGQ5-CeN",
+        "outputId": "6d1a5087-2d04-4216-dd8b-bffe8a3a4da1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "3\n",
+            "PROD = 6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = float(input())\n",
+        "B = float(input())\n",
+        "\n",
+        "if A > 10 or B > 10:\n",
+        "  A = float(input())\n",
+        "  B = float(input())\n",
+        "\n",
+        "MEDIA = ((3.5*A) + (7.5*B))/2\n",
+        "print(f\"Average = {MEDIA:.1f}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9oUCPrip-_B9",
+        "outputId": "1ebee103-bdc2-4719-83c3-18e3085c5b06"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "10\n",
+            "10\n",
+            "10\n",
+            "Average = 55.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Primeira leitura das notas\n",
+        "A = float(input())\n",
+        "B = float(input())\n",
+        "\n",
+        "# Repete o pedido enquanto A for maior que 10 OU B for maior que 10\n",
+        "while A > 10 or B > 10:\n",
+        "    A = float(input())\n",
+        "    B = float(input())\n",
+        "\n",
+        "# Cálculo da média ponderada dividindo pela soma dos pesos (11.0)\n",
+        "MEDIA = ((3.5 * A) + (7.5 * B)) / 11.0\n",
+        "\n",
+        "print(f\"MEDIA = {MEDIA:.5f}\")"
+      ],
+      "metadata": {
+        "id": "1qGkaS4voQlZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Average 2 - Beecrowd\n",
+        "A = float(input())\n",
+        "B = float(input())\n",
+        "C = float(input())\n",
+        "\n",
+        "while A > 10 or B > 10 or C > 10:\n",
+        "    A = float(input())\n",
+        "    B = float(input())\n",
+        "    C = float(input())\n",
+        "\n",
+        "MEDIA = ((2*A) + (3*B) + (5*C))/10\n",
+        "print(f\"MEDIA = {MEDIA:.1f}\")"
+      ],
+      "metadata": {
+        "id": "V0uXNt7KowrZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "C = int(input())\n",
+        "D = int(input())\n",
+        "\n",
+        "DIFERENCA = ((A*B)-(C*D))\n",
+        "print(f'DIFERENCA = {DIFERENCA}')"
+      ],
+      "metadata": {
+        "id": "UYyweUXipbPc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "C = float(input())\n",
+        "\n",
+        "NUMBER =  A\n",
+        "SALARY = B*C\n",
+        "\n",
+        "print(f'NUMBER = {NUMBER}')\n",
+        "print(f'SALARY = {SALARY}')"
+      ],
+      "metadata": {
+        "id": "JinFFKDEuuON"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "C = float(input())\n",
+        "\n",
+        "NUMBER = A\n",
+        "SALARY = B*C\n",
+        "\n",
+        "print(f'NUMBER = {NUMBER}')\n",
+        "print(f'SALARY = U$ {SALARY:.2f}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "P01wb39mGQ09",
+        "outputId": "0f2413a3-488f-439a-efe7-2c1e807cd8b7"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "250\n",
+            "250\n",
+            "250\n",
+            "NUMBER = 250\n",
+            "SALARY = U$ 62500.00\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
