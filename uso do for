@@ -4,7 +4,8 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMnaQp60aqEODTMU2D4BTKo"
+      "authorship_tag": "ABX9TyOdtwqEIu5cRh406N07Injm",
+      "include_colab_link": true
     },
     "kernelspec": {
       "name": "python3",
@@ -15,6 +16,16 @@
     }
   },
   "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LeunamGuilherme/python-fundamentals/blob/main/uso%20do%20for\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
     {
       "cell_type": "code",
       "execution_count": 2,
@@ -50,12 +61,31 @@
     },
     {
       "cell_type": "code",
-      "source": [],
+      "source": [
+        "fruits = [\"apple\", \"banana\", \"orange\"]\n",
+        "\n",
+        "for fruit in fruits:\n",
+        "    print(f\"Fruta: {fruit}\")"
+      ],
       "metadata": {
-        "id": "9k1Yz1L6866-"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9k1Yz1L6866-",
+        "outputId": "e2013948-1470-4937-a6bc-68059f909e56"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Fruta: apple\n",
+            "Fruta: banana\n",
+            "Fruta: orange\n"
+          ]
+        }
+      ]
     }
   ]
 }
