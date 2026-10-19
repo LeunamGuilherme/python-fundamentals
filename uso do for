@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPuU+eZolxSg+2WF3PZLww7",
+      "authorship_tag": "ABX9TyMBsl0cluO+bKtXBIPiV6IG",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -119,12 +119,64 @@
     },
     {
       "cell_type": "code",
-      "source": [],
+      "source": [
+        "for i in range(10,0,-1):\n",
+        "  print(f'{i}')\n",
+        "print('Fire!')"
+      ],
       "metadata": {
-        "id": "tEl64Fr4Bpge"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tEl64Fr4Bpge",
+        "outputId": "34f8addc-8fcb-423d-a608-7c70d07372d6"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "9\n",
+            "8\n",
+            "7\n",
+            "6\n",
+            "5\n",
+            "4\n",
+            "3\n",
+            "2\n",
+            "1\n",
+            "Fire!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "soma = 0\n",
+        "for i in range(2, 21, 2):\n",
+        "    soma += i\n",
+        "print(\"A soma dos números pares é:\", soma)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K02PfyxBEOe-",
+        "outputId": "7b4e6d2c-49af-4ae5-ce38-2fe4c172bbd4"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A soma dos números pares é: 110\n"
+          ]
+        }
+      ]
     }
   ]
 }
