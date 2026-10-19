@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyOdtwqEIu5cRh406N07Injm",
+      "authorship_tag": "ABX9TyPuU+eZolxSg+2WF3PZLww7",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -86,6 +86,45 @@
           ]
         }
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "temperature = float(input('Insert the temperature in Celsius: '))\n",
+        "if temperature < 15:\n",
+        "  print('Cold')\n",
+        "elif temperature >= 15 and temperature <= 25:\n",
+        "  print('pleasure')\n",
+        "else:\n",
+        "  print('Hot')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eHDPJZXk-ra2",
+        "outputId": "eb15ebba-d3f6-4276-af2c-2640aaa33831"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Insert the temperature in Celsius: 0\n",
+            "Cold\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "tEl64Fr4Bpge"
+      },
+      "execution_count": null,
+      "outputs": []
     }
   ]
 }
