@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMM6Kmf4Nm5mKGF+b+FCBw4",
+      "authorship_tag": "ABX9TyNrPvk7MN3H4hsPRr2rX8HI",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,7 +28,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 2,
+      "execution_count": null,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -74,7 +74,7 @@
         "id": "9k1Yz1L6866-",
         "outputId": "e2013948-1470-4937-a6bc-68059f909e56"
       },
-      "execution_count": 3,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -105,7 +105,7 @@
         "id": "eHDPJZXk-ra2",
         "outputId": "eb15ebba-d3f6-4276-af2c-2640aaa33831"
       },
-      "execution_count": 17,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -131,7 +131,7 @@
         "id": "tEl64Fr4Bpge",
         "outputId": "34f8addc-8fcb-423d-a608-7c70d07372d6"
       },
-      "execution_count": 23,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -167,7 +167,7 @@
         "id": "K02PfyxBEOe-",
         "outputId": "7b4e6d2c-49af-4ae5-ce38-2fe4c172bbd4"
       },
-      "execution_count": 24,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -194,7 +194,7 @@
         "id": "OgGn4Cx5HxbI",
         "outputId": "283b241c-5842-45ba-f190-eae1fbdc0f52"
       },
-      "execution_count": 34,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -217,9 +217,53 @@
     },
     {
       "cell_type": "code",
-      "source": [],
+      "source": [
+        "USUARIO = 'admin'\n",
+        "SENHA = '123'\n",
+        "\n",
+        "while True:\n",
+        "  user_name = input('Type the user: ')\n",
+        "  password_name = input('Type the password: ')\n",
+        "  if user_name == USUARIO and password_name == SENHA:\n",
+        "    print('Sucess!')\n",
+        "  else:\n",
+        "    print('Try again!')\n"
+      ],
       "metadata": {
-        "id": "KIorsMgGIRTW"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KIorsMgGIRTW",
+        "outputId": "17dc36b5-922e-4060-9fa7-63a63558bad6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "metadata": {
+            "tags": null
+          },
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Sucess!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ages = [12, 18, 25, 15, 30, 8]\n",
+        "total_maiores = 0\n",
+        "\n",
+        "for idade in ages:\n",
+        "    if idade >= 18:\n",
+        "        total_maiores += 1\n",
+        "\n",
+        "print(\"Total de pessoas maiores de idade:\", total_maiores)"
+      ],
+      "metadata": {
+        "id": "LRCSKuq6o6hD"
       },
       "execution_count": null,
       "outputs": []
