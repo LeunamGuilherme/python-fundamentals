@@ -1,0 +1,293 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPfkZQL5RPmsRZDMhq4YtGd"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": [
+        "line1 = input().split()\n",
+        "A = int(line1[0])\n",
+        "B = int(line1[1])\n",
+        "C = float(line1[2])\n",
+        "line2 = input().split()\n",
+        "D = int(line2[0])\n",
+        "E = int(line2[1])\n",
+        "F = float(line2[2])\n",
+        "Valor_a_pagar = (B * C) + (E * F)\n",
+        "print(f'VALOR A PAGAR: R$ {Valor_a_pagar:.2f}')"
+      ],
+      "metadata": {
+        "id": "V2M9goJK7PX8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "R = float(input())\n",
+        "pi = 3.14159\n",
+        "VOLUME = (4/3) * pi * (R**3)\n",
+        "print(f'VOLUME = {VOLUME:.3f}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sWoAv0Wv7pQM",
+        "outputId": "3ddc8568-07fc-4cc7-8164-1cc2c134cd52"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "12\n",
+            "VOLUME = 7238.223\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = float(input())\n",
+        "B = float(input())\n",
+        "C = float(input())\n",
+        "pi = 3.14159\n",
+        "TRIANGULO = (A*C)\n",
+        "CIRCULO = pi*(C**2)\n",
+        "TRAPEZIO = ((A+B)*C)/2\n",
+        "QUADRADO = B**2\n",
+        "RETANGULO = A*B\n",
+        "print(f'TRIANGULO: {TRIANGULO:.31}')\n",
+        "print(f'CIRCULO: {CIRCULO:.3}')\n",
+        "print(f'TRAPEZIO: {TRAPEZIO:.3}')\n",
+        "print(f'QUADRADO: {QUADRADO:.3}')\n",
+        "print(f'RETANGULO: {RETANGULO:.3}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_Wo0R97CCn8H",
+        "outputId": "10372e30-085d-4fc5-c776-43b0cb437e00"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "1\n",
+            "1\n",
+            "TRIANGULO: 1.0\n",
+            "CIRCULO: 4.52e+02\n",
+            "TRAPEZIO: 1.0\n",
+            "QUADRADO: 1.0\n",
+            "RETANGULO: 1.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "  nota_aluno = int(input('Digite a nota do aluno: '))\n",
+        "  if nota_aluno >= 0 and nota_aluno <= 10:\n",
+        "    print(f'Nota armazenada com sucesso:{nota_aluno}')\n",
+        "    break\n",
+        "\n",
+        "    print(\"Nota inválida digite novamente:\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n0zATJq1QZHF",
+        "outputId": "57d6bac0-c40a-4c0f-a126-0052191ca9a5"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a nota do aluno: 11\n",
+            "Digite a nota do aluno: 11\n",
+            "Digite a nota do aluno: 11\n",
+            "Digite a nota do aluno: 11\n",
+            "Digite a nota do aluno: 11\n",
+            "Digite a nota do aluno: 11\n",
+            "Digite a nota do aluno: 5\n",
+            "Nota armazenada com sucesso:5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "  idade = int(input('Type your age: '))\n",
+        "  if idade >= 18 and idade <= 100:\n",
+        "    print(f'age registered successfully: {idade}')\n",
+        "    break\n",
+        "  print(\"Type your age from 18 until 100 years\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "58XOvE-eV5nF",
+        "outputId": "fde3c8c3-f47c-4d28-d102-9a45d676cf7c"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Type your age: 15\n",
+            "Type your age from 18 until 100 years\n",
+            "Type your age: 15\n",
+            "Type your age from 18 until 100 years\n",
+            "Type your age: 15\n",
+            "Type your age from 18 until 100 years\n",
+            "Type your age: 15\n",
+            "Type your age from 18 until 100 years\n",
+            "Type your age: 15\n",
+            "Type your age from 18 until 100 years\n",
+            "Type your age: 15\n",
+            "Type your age from 18 until 100 years\n",
+            "Type your age: 15\n",
+            "Type your age from 18 until 100 years\n",
+            "Type your age: 15\n",
+            "Type your age from 18 until 100 years\n",
+            "Type your age: 15\n",
+            "Type your age from 18 until 100 years\n",
+            "Type your age: 20\n",
+            "age registered successfully: 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "IXz7xvLZWKqL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#English\n",
+        "while True:\n",
+        "    discount = float(input(\"Enter the discount percentage (0 to 50%): \"))\n",
+        "\n",
+        "    if discount >= 0 and discount <= 50:\n",
+        "        print(f\"Discount applied successfully: {discount}%\")\n",
+        "        break\n",
+        "\n",
+        "    print(\"Invalid discount! The discount must be between 0% and 50%.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iAPgFXkCWA20",
+        "outputId": "f8b29b6b-cbb6-4c60-9466-349f17c713fc"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the discount percentage (0 to 50%): 70\n",
+            "Invalid discount! The discount must be between 0% and 50%.\n",
+            "Enter the discount percentage (0 to 50%): 24\n",
+            "Discount applied successfully: 24.0%\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "  A = input('Type the user: ' ))\n",
+        "  B = input('Type the password: '))\n",
+        "  if A == 'adm' and B == 123:\n",
+        "    print('access allowed')\n",
+        "    break\n",
+        "    print(\"try again!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i_xDS0epcwWm",
+        "outputId": "2fce18a2-8918-448a-db4b-ac3d37a2a9ab"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Type the user: adm\n",
+            "Type the password: 123\n",
+            "Type the user: adm\n",
+            "Type the password: 123m\n",
+            "Type the user: adm\n",
+            "Type the password: adm\n",
+            "Type the user: adm\n",
+            "Type the password: adm\n",
+            "Type the user: adm\n",
+            "Type the password: 123\n",
+            "Type the user: 'adm'\n",
+            "Type the password: 123\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "USUARIO = adm\n",
+        "SENHA = 123\n",
+        "\n",
+        "while TRUE:\n",
+        "  usuario_login = input('Type your user: ')\n",
+        "  senha_login = input('Type your password: ')\n",
+        "  if usuario_login = USUARIO and senha_login = SENHA:\n",
+        "    print('Sucess!')\n",
+        "    else:\n",
+        "      print('Try again!')"
+      ],
+      "metadata": {
+        "id": "uSNZQ48Cgh3O"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
