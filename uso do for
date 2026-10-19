@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNrPvk7MN3H4hsPRr2rX8HI",
+      "authorship_tag": "ABX9TyN2kyN1y/MHo+I288RHlfi0",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -264,6 +264,21 @@
       ],
       "metadata": {
         "id": "LRCSKuq6o6hD"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "  number = int(input('Insert a number: '))\n",
+        "  if number <0:\n",
+        "    print('Negative number entered... Stopping!')\n",
+        "    break"
+      ],
+      "metadata": {
+        "id": "DhwJjp-wqvEu"
       },
       "execution_count": null,
       "outputs": []
