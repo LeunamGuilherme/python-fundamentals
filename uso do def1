@@ -4,7 +4,8 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNdiYjx4K06AqutRPZ09Lsv"
+      "authorship_tag": "ABX9TyNdiYjx4K06AqutRPZ09Lsv",
+      "include_colab_link": true
     },
     "kernelspec": {
       "name": "python3",
@@ -15,6 +16,16 @@
     }
   },
   "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LeunamGuilherme/python-fundamentals/blob/main/uso%20do%20def1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
     {
       "cell_type": "code",
       "execution_count": 11,
