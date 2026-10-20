@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNqLDjpcVOIMBFDD97Rh/m2",
+      "authorship_tag": "ABX9TyMTkXDoPDDmNs1laqQZnZFm",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -55,6 +55,33 @@
         "        pass\n",
         "check_login('admin','1234')\n",
         "print(\"Login successful\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def apply_discount(price, discount_percentage):\n",
+        "  resultado = price*(1-(discount_percentage)/100)\n",
+        "  return resultado\n",
+        "discount = apply_discount(10,50)\n",
+        "print(f'The final value is: {discount}')\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iejmdFr2f8rE",
+        "outputId": "1ca5d973-9a6a-4757-a419-47aa72f7e78f"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The final value is: 5.0\n"
+          ]
+        }
       ]
     }
   ]
