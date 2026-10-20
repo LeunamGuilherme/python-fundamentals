@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMTkXDoPDDmNs1laqQZnZFm",
+      "authorship_tag": "ABX9TyNr+O0CNIrc52oYcI2RI3Q1",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -83,6 +83,23 @@
           ]
         }
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def apply_discount(price, discount_percentage):\n",
+        "    resultado = price * (1 - (discount_percentage / 100))\n",
+        "    return resultado\n",
+        "\n",
+        "# Para passar um preço decimal (ex: 10.50) e um desconto de 15%:\n",
+        "discount = apply_discount(10.50, 15)\n",
+        "print(f'The final value is: {discount:.2f}')"
+      ],
+      "metadata": {
+        "id": "7x8WkkO4hsXN"
+      },
+      "execution_count": null,
+      "outputs": []
     }
   ]
 }
