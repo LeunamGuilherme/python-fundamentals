@@ -1,0 +1,61 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNqLDjpcVOIMBFDD97Rh/m2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LeunamGuilherme/python-fundamentals/blob/main/def%20questss\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3fO65s7xfFv5",
+        "outputId": "57c663e6-2dad-4a5b-a262-c2889929a7e5"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Login successful\n"
+          ]
+        }
+      ],
+      "source": [
+        "def check_login(username,password):\n",
+        "  while True:\n",
+        "    if username == 'admin' and password == '1234':\n",
+        "      return username and password\n",
+        "    else:\n",
+        "      while False:\n",
+        "        pass\n",
+        "check_login('admin','1234')\n",
+        "print(\"Login successful\")"
+      ]
+    }
+  ]
+}
