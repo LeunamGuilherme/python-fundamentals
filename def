@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyOMzK41froQ4TWhk8sQRKP5",
+      "authorship_tag": "ABX9TyO9RWOhSpBKsZ6DG/x0RKHN",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,7 +28,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 11,
+      "execution_count": null,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -74,7 +74,7 @@
         "id": "6MJ6VxfryNrc",
         "outputId": "3133ec7d-1dc0-4d1e-ea66-984727e46058"
       },
-      "execution_count": 20,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -97,8 +97,7 @@
     {
       "cell_type": "code",
       "source": [
-        "def maior_numero(lista_de_numeros):\n",
-        ""
+        "def maior_numero(lista_de_numeros):\n"
       ],
       "metadata": {
         "id": "kMrn4rKM2sTn"
@@ -126,7 +125,7 @@
         "id": "Jq66y6xS4h10",
         "outputId": "31f2de2e-c26c-4daf-8ae1-a237d46cfcf0"
       },
-      "execution_count": 35,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -194,6 +193,23 @@
       "source": [],
       "metadata": {
         "id": "8WJAJhQuE2pn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def check_login(username,password):\n",
+        "  while True\n",
+        "    if username == admin and password == 1234\n",
+        "    return username and password\n",
+        "    else:\n",
+        "      while False\n",
+        "check_login(admin,1234)"
+      ],
+      "metadata": {
+        "id": "_MG-kwO6cefW"
       },
       "execution_count": null,
       "outputs": []
