@@ -521,7 +521,94 @@
         "print(pessoas)"
       ],
       "metadata": {
-        "id": "nX0oSWkxP4qX"
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 540
+        },
+        "id": "nX0oSWkxP4qX",
+        "outputId": "720e6628-8d3e-446f-ea34-e14d0a8ca4a7"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 3\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 3\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 3\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 3\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 3\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 3\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 3\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 1\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 1\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 1\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 1\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 1\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 1\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 1\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 1\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 1\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 1\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: 1\n",
+            "Digite 1 para cadastrar uma pessoa e 2 para sair: \n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "ValueError",
+          "evalue": "invalid literal for int() with base 10: ''",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_3035/802101527.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0mpessoas\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m[\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;32mwhile\u001b[0m \u001b[0;32mTrue\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m     \u001b[0mdecisao\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'Digite 1 para cadastrar uma pessoa e 2 para sair: '\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      7\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mdecisao\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      8\u001b[0m         \u001b[0;32mbreak\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mValueError\u001b[0m: invalid literal for int() with base 10: ''"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pessoas = []\n",
+        "while True:\n",
+        "  decisao = int(input('type 1 for continue or 2 for stop: '))\n",
+        "  if decisao == 2:\n",
+        "    break\n",
+        "\n",
+        "nome = input('Your name: ')\n",
+        "idade = input('Your Age: ')\n",
+        "altura = input('Your height: ')\n",
+        "pessoa = {'name': nome, 'age': idade, 'Height': altura}\n",
+        "\n",
+        "pessoas.append(pessoa)\n",
+        "\n",
+        "print(pessoas)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2ZeHRh_fRiK3",
+        "outputId": "1f1b6910-50ae-46ee-b08a-8ee552057d7c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "type 1 for continue or 2 for stop: 2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "QXa4rpk6UzJ4"
       },
       "execution_count": null,
       "outputs": []
