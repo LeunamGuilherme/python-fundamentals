@@ -4,7 +4,6 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyO9RWOhSpBKsZ6DG/x0RKHN",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,51 +27,234 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "source": [
+        "number = float(input('Type a number: '))\n",
+        "if number > 0:\n",
+        "  print('The number is greater than 0')\n",
+        "elif number < 0:\n",
+        "  print('The number is less than 0')\n",
+        "else:\n",
+        "  print('The number is 0')"
+      ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "id": "1c-HhgM5ws9i",
-        "outputId": "837db806-8a29-41d9-f599-ca30cc1b5283"
+        "id": "4kfJ_8cw7Vni",
+        "outputId": "2c1b600a-8f85-460d-f0be-5148f2d50b26"
       },
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "O resultado é 6\n"
+            "Type a number: 12\n",
+            "The number is greater than 0\n"
           ]
         }
-      ],
-      "source": [
-        "def somar_lista(*numeros):\n",
-        "  resultado = 0\n",
-        "  for numero in numeros:\n",
-        "      resultado += numero\n",
-        "  return resultado\n",
-        "\n",
-        "soma_da_lista = somar_lista(1, 2, 3 )\n",
-        "print(f'O resultado é {soma_da_lista}')\n"
       ]
     },
     {
       "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "kVeXHKf5wZ_D"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
       "source": [
-        "def contagem_regressiva(numero):\n",
-        "  while numero > 0:\n",
-        "    print(numero)\n",
-        "    numero -=1\n",
-        "    if numero == 0:\n",
-        "      break\n",
-        "contagem_regressiva(10)"
+        "sex = input('Type M or F to know your sex: ')\n",
+        "if sex == 'M':\n",
+        "  print('You are a Man')\n",
+        "elif sex == 'F':\n",
+        "  print('You are a female')"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "id": "6MJ6VxfryNrc",
-        "outputId": "3133ec7d-1dc0-4d1e-ea66-984727e46058"
+        "id": "3XUiMl1hBlGu",
+        "outputId": "29c941b2-d65d-4b40-82e7-135bd6dd5e68"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Type M or F to know your sex: M\n",
+            "You are a Man\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Receba a temperatura em Fahrenheit e exiba em graus celsius\n",
+        "temperature = float(input('Put the temperature in Fahrenheit: '))\n",
+        "temperature2 = (5/9)*(temperature - 32)\n",
+        "print(f\"The temperature in Celsius is: {temperature2}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9_DXNUzADrA0",
+        "outputId": "acefdbf1-23df-4f63-c1bc-6b79504c0adf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Put the temperature in Fahrenheit: 50\n",
+            "The temperature in Celsius is: 10.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "kyu2etUjC6bY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(10)\n",
+        "B = int(9)\n",
+        "X = print(f\"the sum is {A + B} \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-dZvtvtCDusy",
+        "outputId": "5513c245-c4af-4bf1-82bb-5089bb2ccff3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "the sum is 19 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = 3.14159\n",
+        "R = float(input())\n",
+        "A = n * (R ** 2)\n",
+        "print(f\"A={A:.4f}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GHOBCy2ktCo6",
+        "outputId": "07828d9e-bfe7-4dcb-e61c-52b6f0c8effa"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "30\n",
+            "A=2827.4310\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "\n",
+        "SOMA = A + B\n",
+        "\n",
+        "print(f\"SOMA = {SOMA}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AFRTfluete-F",
+        "outputId": "47ecc813-f248-40bc-f69e-ec3601406bba"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "{3}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "PROD = A*B\n",
+        "print(f\"PROD = {PROD}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pAEAeGQ5-CeN",
+        "outputId": "6d1a5087-2d04-4216-dd8b-bffe8a3a4da1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "3\n",
+            "PROD = 6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = float(input())\n",
+        "B = float(input())\n",
+        "\n",
+        "if A > 10 or B > 10:\n",
+        "  A = float(input())\n",
+        "  B = float(input())\n",
+        "\n",
+        "MEDIA = ((3.5*A) + (7.5*B))/2\n",
+        "print(f\"Average = {MEDIA:.1f}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9oUCPrip-_B9",
+        "outputId": "1ebee103-bdc2-4719-83c3-18e3085c5b06"
       },
       "execution_count": null,
       "outputs": [
@@ -81,15 +263,10 @@
           "name": "stdout",
           "text": [
             "10\n",
-            "9\n",
-            "8\n",
-            "7\n",
-            "6\n",
-            "5\n",
-            "4\n",
-            "3\n",
-            "2\n",
-            "1\n"
+            "10\n",
+            "10\n",
+            "10\n",
+            "Average = 55.0\n"
           ]
         }
       ]
@@ -97,10 +274,22 @@
     {
       "cell_type": "code",
       "source": [
-        "def maior_numero(lista_de_numeros):\n"
+        "# Primeira leitura das notas\n",
+        "A = float(input())\n",
+        "B = float(input())\n",
+        "\n",
+        "# Repete o pedido enquanto A for maior que 10 OU B for maior que 10\n",
+        "while A > 10 or B > 10:\n",
+        "    A = float(input())\n",
+        "    B = float(input())\n",
+        "\n",
+        "# Cálculo da média ponderada dividindo pela soma dos pesos (11.0)\n",
+        "MEDIA = ((3.5 * A) + (7.5 * B)) / 11.0\n",
+        "\n",
+        "print(f\"MEDIA = {MEDIA:.5f}\")"
       ],
       "metadata": {
-        "id": "kMrn4rKM2sTn"
+        "id": "1qGkaS4voQlZ"
       },
       "execution_count": null,
       "outputs": []
@@ -108,22 +297,80 @@
     {
       "cell_type": "code",
       "source": [
-        "#1. Calculadora de Média (calculate_average)\n",
-        "def calculate_average(A, B , C):\n",
-        "  A = int(input('Type the first grade: '))\n",
-        "  B = int(input('Type the second grade: '))\n",
-        "  C = int(input('Type the third grade: '))\n",
-        "  nota = (A + B + C)/3\n",
-        "  print(f'Average is: {nota}')\n",
+        "#Average 2 - Beecrowd\n",
+        "A = float(input())\n",
+        "B = float(input())\n",
+        "C = float(input())\n",
         "\n",
-        "calculate_average(3,3,3)"
+        "while A > 10 or B > 10 or C > 10:\n",
+        "    A = float(input())\n",
+        "    B = float(input())\n",
+        "    C = float(input())\n",
+        "\n",
+        "MEDIA = ((2*A) + (3*B) + (5*C))/10\n",
+        "print(f\"MEDIA = {MEDIA:.1f}\")"
+      ],
+      "metadata": {
+        "id": "V0uXNt7KowrZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "C = int(input())\n",
+        "D = int(input())\n",
+        "\n",
+        "DIFERENCA = ((A*B)-(C*D))\n",
+        "print(f'DIFERENCA = {DIFERENCA}')"
+      ],
+      "metadata": {
+        "id": "UYyweUXipbPc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "C = float(input())\n",
+        "\n",
+        "NUMBER =  A\n",
+        "SALARY = B*C\n",
+        "\n",
+        "print(f'NUMBER = {NUMBER}')\n",
+        "print(f'SALARY = {SALARY}')"
+      ],
+      "metadata": {
+        "id": "JinFFKDEuuON"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "C = float(input())\n",
+        "\n",
+        "NUMBER = A\n",
+        "SALARY = B*C\n",
+        "\n",
+        "print(f'NUMBER = {NUMBER}')\n",
+        "print(f'SALARY = U$ {SALARY:.2f}')"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "id": "Jq66y6xS4h10",
-        "outputId": "31f2de2e-c26c-4daf-8ae1-a237d46cfcf0"
+        "id": "P01wb39mGQ09",
+        "outputId": "0f2413a3-488f-439a-efe7-2c1e807cd8b7"
       },
       "execution_count": null,
       "outputs": [
@@ -131,10 +378,11 @@
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Type the first grade: 4\n",
-            "Type the second grade: 4\n",
-            "Type the third grade: 1\n",
-            "Average is: 3.0\n"
+            "250\n",
+            "250\n",
+            "250\n",
+            "NUMBER = 250\n",
+            "SALARY = U$ 62500.00\n"
           ]
         }
       ]
@@ -142,33 +390,16 @@
     {
       "cell_type": "code",
       "source": [
-        "#2. Conversor de Moeda (convert_dollar_to_real)\n",
-        "def convert_dollar_to_real(dollars):\n",
-        "  dollars = int(input('Type the amount of dollars: '))\n",
-        "  exchange_rate = dollars*5\n",
-        "  print(f'The value of the real in dollar is: {exchange_rate}')\n",
+        "A = input()\n",
+        "B = float(input())\n",
+        "C = float(input())\n",
         "\n",
-        "convert_dollar_to_real(10)"
-      ],
-      "metadata": {
-        "id": "20vtnbAm2s-m"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#1 Simplificado\n",
-        "def calculate_average(A,B,C):\n",
-        "  nota = (A+B+C)/3\n",
-        "  return nota\n",
+        "TOTAL = B + (0.15 * C)\n",
         "\n",
-        "resultado = calculate_average(4,4,1)\n",
-        "print(f'Average is: {nota}')"
+        "print(f\"TOTAL = R$ {TOTAL:.2f}\")"
       ],
       "metadata": {
-        "id": "2PYwEgg5CkYl"
+        "id": "FjD60TNTINCM"
       },
       "execution_count": null,
       "outputs": []
@@ -176,23 +407,18 @@
     {
       "cell_type": "code",
       "source": [
-        "def convert_dollar_to_real(dollars)\n",
-        "  real = dollars*5\n",
-        "  return real\n",
-        "resultado = convert_dollar_to_real(50)\n",
-        "print(f'The value of the real in dollar is: {real}')"
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "C = float(input())\n",
+        "D = int(input())\n",
+        "E = int(input())\n",
+        "F = float(input())\n",
+        "\n",
+        "Valor_a_pagar = (B*C) + (E*F)\n",
+        "print(f'VALOR A PAGAR: R$ {Valor_a_pagar:.2f}')"
       ],
       "metadata": {
-        "id": "I6FnShc-CmNT"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [],
-      "metadata": {
-        "id": "8WJAJhQuE2pn"
+        "id": "dV2CR3zITYBX"
       },
       "execution_count": null,
       "outputs": []
@@ -200,16 +426,102 @@
     {
       "cell_type": "code",
       "source": [
-        "def check_login(username,password):\n",
-        "  while True\n",
-        "    if username == admin and password == 1234\n",
-        "    return username and password\n",
-        "    else:\n",
-        "      while False\n",
-        "check_login(admin,1234)"
+        "A = input('Digite 1 para continuar e 2 para sair: ')\n",
+        "if A != 1 or A != 2:\n",
+        "  input('Digite 1 para continuar e 2 para sair:')\n",
+        "elif A == 1:\n",
+        "    nome = input('nome:')\n",
+        "    idade = input('idade:')\n",
+        "    altura = input('altura:')\n",
+        "    Dic = {f''Nome': '{nome}', 'idade': '{idade}', 'altura': '{altura}''}\n",
+        "    print(Dic)\n",
+        "else:\n",
+        "    print('Você saiu!')"
       ],
       "metadata": {
-        "id": "_MG-kwO6cefW"
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "2IaPJWGeC6sW",
+        "outputId": "4a60d0b1-51a9-465d-f85e-8cb0394b92ae"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax. Perhaps you forgot a comma? (827201125.py, line 8)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_3035/827201125.py\"\u001b[0;36m, line \u001b[0;32m8\u001b[0m\n\u001b[0;31m    Dic = {f''Nome': '{nome}', 'idade': '{idade}', 'altura': '{altura}''}\u001b[0m\n\u001b[0m           ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax. Perhaps you forgot a comma?\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = input('Digite 1 para continuar e 2 para sair: ')\n",
+        "\n",
+        "# Valida a entrada enquanto for diferente de '1' E de '2'\n",
+        "while A != '1' and A != '2':\n",
+        "    A = input('Opção inválida! Digite 1 para continuar e 2 para sair: ')\n",
+        "\n",
+        "if A == '1':\n",
+        "    nome = input('Nome: ')\n",
+        "    idade = input('Idade: ')\n",
+        "    altura = input('Altura: ')\n",
+        "\n",
+        "    # Dicionário formatado corretamente\n",
+        "    person = {'nome': nome, 'idade': idade, 'altura': altura}\n",
+        "    print(person)\n",
+        "else:\n",
+        "    print('Você saiu!')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xeyKUZ32OS3v",
+        "outputId": "33453f45-7cc7-4b05-b8b5-ad49db4465b7"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite 1 para continuar e 2 para sair: 1\n",
+            "Nome: Guilherme\n",
+            "Idade: 20\n",
+            "Altura: 183\n",
+            "{'nome': 'Guilherme', 'idade': '20', 'altura': '183'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Faça um programa que o usuário possa cadastrar n pessoas,\n",
+        "#armazenando seu nome, idade e altura\n",
+        "\n",
+        "pessoas = []\n",
+        "while True:\n",
+        "    decisao = int(input('Digite 1 para cadastrar uma pessoa e 2 para sair: '))\n",
+        "    if decisao == 2:\n",
+        "        break\n",
+        "\n",
+        "    nome = input('Digite o nome: ')\n",
+        "    idade = input('Digite a idade: ')\n",
+        "    altura = input('Digite a altura: ')\n",
+        "    pessoa = {'nome': nome, 'idade': idade, 'altura': altura}\n",
+        "    pessoas.append(pessoa)\n",
+        "\n",
+        "print(pessoas)"
+      ],
+      "metadata": {
+        "id": "nX0oSWkxP4qX"
       },
       "execution_count": null,
       "outputs": []
