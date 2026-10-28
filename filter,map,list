@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPmwId2aEMDPYIa+zT05Y/Y",
+      "authorship_tag": "ABX9TyNGS+Jq9ITBp8FBGQ8b/mRi",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -132,6 +132,64 @@
           "name": "stdout",
           "text": [
             "['Age: 18', 'Age: 25', 'Age: 30', 'Age: 21']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "classrooms = {\n",
+        "    \"Room A\": 25,\n",
+        "    \"Room B\": 30\n",
+        "}\n",
+        "\n",
+        "classrooms[\"Room C\"] = 28\n",
+        "print(classrooms)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4Fh9LzmfkWks",
+        "outputId": "e04b1118-dcfd-487e-8dc2-9366ff5cc026"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'Room A': 25, 'Room B': 30, 'Room C': 28}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "item = {\n",
+        "    \"name\": \"Keyboard\",\n",
+        "    \"price\": 80.0\n",
+        "}\n",
+        "\n",
+        "item[\"price\"] = 95.0\n",
+        "print(item)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JEW7SSx-kj8y",
+        "outputId": "5b77220c-d24c-46e0-f4b4-b7fdffd2f934"
+      },
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'name': 'Keyboard', 'price': 95.0}\n"
           ]
         }
       ]
