@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPk28EOPkkch5pFwOtThGJg",
+      "authorship_tag": "ABX9TyMP1xkLJF9+LCerUC4wBuEb",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -271,6 +271,31 @@
           "name": "stdout",
           "text": [
             "[90, 45, 22]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers = [2, 4, 6, 8]\n",
+        "long_numbers = list(map(lambda x: x**2, numbers))\n",
+        "print(long_numbers)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bH49ilV3pwyb",
+        "outputId": "60d07a68-fb57-453b-8b7a-d2c77fb485a2"
+      },
+      "execution_count": 63,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[4, 16, 36, 64]\n"
           ]
         }
       ]
