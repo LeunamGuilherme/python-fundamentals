@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyORphLUXIwNPAMtdnbh2SF5",
+      "authorship_tag": "ABX9TyPmwId2aEMDPYIa+zT05Y/Y",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -112,21 +112,26 @@
     },
     {
       "cell_type": "code",
-      "source": [],
+      "source": [
+        "ages = [12, 18, 25, 15, 30, 8, 21]\n",
+        "long_ages = list(filter(lambda x: x >= 18, ages))\n",
+        "agesfilter = list(map(lambda y: f\"Age: {y}\", long_ages))\n",
+        "print(agesfilter)"
+      ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "bOxeikbudwgT",
-        "outputId": "3a912139-6ec0-49e5-e573-87aeeadffb1b"
+        "outputId": "7f4c537f-c843-4e1c-e76f-576ce4982d5a"
       },
-      "execution_count": 20,
+      "execution_count": 40,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "[50.0, 100.0, 250.0, 500.0]\n"
+            "['Age: 18', 'Age: 25', 'Age: 30', 'Age: 21']\n"
           ]
         }
       ]
