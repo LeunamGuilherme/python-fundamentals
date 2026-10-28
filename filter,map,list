@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPjZ6RRk2FiW+0BHidTff4L",
+      "authorship_tag": "ABX9TyPMHZKMiz/SP8n4FrJ2Swvm",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -47,6 +47,40 @@
           "name": "stdout",
           "text": [
             "[12, 13, 14, 15, 16, 17]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "z_FLzN7pbMtx"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "names = [\"Ana\", \"Guilherme\", \"Lucas\", \"Beatriz\", \"Pedro\", \"Caio\"]\n",
+        "\n",
+        "long_names = list(filter(lambda name: len(name) > 5, names))\n",
+        "\n",
+        "print(long_names)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nmnS_f_WOiHL",
+        "outputId": "500bd67a-376d-434c-8351-a30813b32389"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Guilherme', 'Beatriz']\n"
           ]
         }
       ]
