@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNGS+Jq9ITBp8FBGQ8b/mRi",
+      "authorship_tag": "ABX9TyPk28EOPkkch5pFwOtThGJg",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -190,6 +190,87 @@
           "name": "stdout",
           "text": [
             "{'name': 'Keyboard', 'price': 95.0}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "user = {\n",
+        "    \"username\": \"coder123\",\n",
+        "    \"email\": \"coder@example.com\"\n",
+        "}\n",
+        "\n",
+        "if \"phone\" in user:\n",
+        "    print(\"Phone found!\")\n",
+        "else:\n",
+        "    print(\"Phone not found!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "b_rczxf9lW0L",
+        "outputId": "5f5d2545-fed9-458d-8e1b-b8d288c7572a"
+      },
+      "execution_count": 49,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Phone not found!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "usernames = [\"alice\", \"bob\", \"charlie\"]\n",
+        "uppercase_usernames = list(map(lambda x: x.upper(), usernames))\n",
+        "print(uppercase_usernames)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uWb1lkQBl0Gv",
+        "outputId": "b0d0e325-9c0e-408b-d5ca-75a81aa7bd66"
+      },
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['ALICE', 'BOB', 'CHARLIE']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "prices = [100.0, 50.0, 25.0]\n",
+        "discounted_prices = list(map(lambda x: int(x*0.9), prices))\n",
+        "print(discounted_prices)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xe4RyhHPpAQ8",
+        "outputId": "81fa39bc-59ed-4c20-dda3-1559ee527520"
+      },
+      "execution_count": 62,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[90, 45, 22]\n"
           ]
         }
       ]
