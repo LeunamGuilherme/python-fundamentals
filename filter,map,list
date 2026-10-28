@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPMHZKMiz/SP8n4FrJ2Swvm",
+      "authorship_tag": "ABX9TyORphLUXIwNPAMtdnbh2SF5",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -81,6 +81,52 @@
           "name": "stdout",
           "text": [
             "['Guilherme', 'Beatriz']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "prices_usd = [10.0, 20.0, 50.0, 100.0]\n",
+        "prices_real = list(map(lambda x: x*5, prices_usd))\n",
+        "print(prices_real)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XvLRV0EpcOQZ",
+        "outputId": "5c207d7f-ef98-4180-aae2-d331662e7a12"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[50.0, 100.0, 250.0, 500.0]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bOxeikbudwgT",
+        "outputId": "3a912139-6ec0-49e5-e573-87aeeadffb1b"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[50.0, 100.0, 250.0, 500.0]\n"
           ]
         }
       ]
