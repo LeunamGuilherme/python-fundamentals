@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMJC+8Kb+XcDE8XChn4GMcd",
+      "authorship_tag": "ABX9TyNnNjCoQZioGsOlX4j1rxbf",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -515,6 +515,38 @@
           "text": [
             "2 4 5\n",
             "Perimetro = 11.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Recebe exatamente 5 números inteiros da entrada\n",
+        "A, B, C, D, E = map(int, input().split())\n",
+        "numeros = [A, B, C, D, E]\n",
+        "\n",
+        "# Conta quantos números são pares\n",
+        "pares = [n for n in numeros if n % 2 == 0]\n",
+        "\n",
+        "# Exibe a quantidade de números pares\n",
+        "print(f\"{len(pares)} valores pares\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1zZmbYxqLBuR",
+        "outputId": "ddbbe735-b360-42c5-e355-b3f188e5fa27"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 2 3 4 5 \n",
+            "2 valores pares\n"
           ]
         }
       ]
