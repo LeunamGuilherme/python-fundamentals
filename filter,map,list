@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMP1xkLJF9+LCerUC4wBuEb",
+      "authorship_tag": "ABX9TyM4jB46f2+hGwm/Q2XjQnbo",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -40,7 +40,7 @@
         "id": "7C5KiTwACMCL",
         "outputId": "b9709ac5-295f-40a4-ce91-e53d9acf13cb"
       },
-      "execution_count": 8,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -74,7 +74,7 @@
         "id": "nmnS_f_WOiHL",
         "outputId": "500bd67a-376d-434c-8351-a30813b32389"
       },
-      "execution_count": 16,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -99,7 +99,7 @@
         "id": "XvLRV0EpcOQZ",
         "outputId": "5c207d7f-ef98-4180-aae2-d331662e7a12"
       },
-      "execution_count": 21,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -125,7 +125,7 @@
         "id": "bOxeikbudwgT",
         "outputId": "7f4c537f-c843-4e1c-e76f-576ce4982d5a"
       },
-      "execution_count": 40,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -154,7 +154,7 @@
         "id": "4Fh9LzmfkWks",
         "outputId": "e04b1118-dcfd-487e-8dc2-9366ff5cc026"
       },
-      "execution_count": 42,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -183,7 +183,7 @@
         "id": "JEW7SSx-kj8y",
         "outputId": "5b77220c-d24c-46e0-f4b4-b7fdffd2f934"
       },
-      "execution_count": 44,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -214,7 +214,7 @@
         "id": "b_rczxf9lW0L",
         "outputId": "5f5d2545-fed9-458d-8e1b-b8d288c7572a"
       },
-      "execution_count": 49,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -239,7 +239,7 @@
         "id": "uWb1lkQBl0Gv",
         "outputId": "b0d0e325-9c0e-408b-d5ca-75a81aa7bd66"
       },
-      "execution_count": 54,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -264,7 +264,7 @@
         "id": "Xe4RyhHPpAQ8",
         "outputId": "81fa39bc-59ed-4c20-dda3-1559ee527520"
       },
-      "execution_count": 62,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -289,7 +289,7 @@
         "id": "bH49ilV3pwyb",
         "outputId": "60d07a68-fb57-453b-8b7a-d2c77fb485a2"
       },
-      "execution_count": 63,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -299,6 +299,111 @@
           ]
         }
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def http_error(status):\n",
+        "    match status:\n",
+        "        case 400:\n",
+        "            return \"Bad request\"\n",
+        "        case 404:\n",
+        "            return \"Not found\"\n",
+        "        case 418:\n",
+        "            return \"I'm a teapot\"\n",
+        "        case _:\n",
+        "            return \"Something's wrong with the internet\"\n",
+        "print(list(http_error))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 185
+        },
+        "id": "nM1A_EYwCL8_",
+        "outputId": "deb7076a-8ab9-40e9-c7f6-59be61c7983a"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "'function' object is not iterable",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_6479/1753655144.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      9\u001b[0m         \u001b[0mcase\u001b[0m \u001b[0m_\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     10\u001b[0m             \u001b[0;32mreturn\u001b[0m \u001b[0;34m\"Something's wrong with the internet\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 11\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mlist\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mhttp_error\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'function' object is not iterable"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dia = 1\n",
+        "\n",
+        "match dia:\n",
+        "\n",
+        "  case 1:\n",
+        "    print(\"domingo\")\n",
+        "  case 2:\n",
+        "            print(\"Segunda\")\n",
+        "  case 3:\n",
+        "            print(\"Terça-feira\")\n",
+        "  case 4:\n",
+        "            print(\"Quarta-feira\")\n",
+        "  case 5:\n",
+        "            print(\"Quinta-feira\")\n",
+        "  case 6:\n",
+        "            print(\"Sexta-Feira\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 111
+        },
+        "id": "Sh9Z9MfMC-KN",
+        "outputId": "26b2220f-1513-4152-919d-3bef61186237"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "_IncompleteInputError",
+          "evalue": "incomplete input (3563154308.py, line 15)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_6479/3563154308.py\"\u001b[0;36m, line \u001b[0;32m15\u001b[0m\n\u001b[0;31m    case 6:\u001b[0m\n\u001b[0m           ^\u001b[0m\n\u001b[0;31m_IncompleteInputError\u001b[0m\u001b[0;31m:\u001b[0m incomplete input\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Ponto:\n",
+        "    def __init__(self, x, y):\n",
+        "        self.x = x\n",
+        "        self.y = y\n",
+        "\n",
+        "def onde_está(ponto):\n",
+        "    match ponto:\n",
+        "        case Ponto(x=0, y=0):\n",
+        "            print(\"Origem\")\n",
+        "        case Ponto(x=0, y=y):\n",
+        "            print(f\"Y={y}\")\n",
+        "        case Ponto(x=x, y=0):\n",
+        "            print(f\"X={x}\")\n",
+        "        case Ponto():\n",
+        "            print(\"Em outro lugar\")\n",
+        "        case _:\n",
+        "            print(\"Não é um ponto\")"
+      ],
+      "metadata": {
+        "id": "n-BBslp1IOJ-"
+      },
+      "execution_count": 23,
+      "outputs": []
     }
   ]
 }
