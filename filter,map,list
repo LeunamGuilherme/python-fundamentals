@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMXOa06krpxcwmmLZ6u9hEu",
+      "authorship_tag": "ABX9TyMJC+8Kb+XcDE8XChn4GMcd",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -485,6 +485,39 @@
       },
       "execution_count": null,
       "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Read three floating-point values on the same line\n",
+        "A, B, C = map(float, input().split())\n",
+        "\n",
+        "# Check triangle inequality condition\n",
+        "if (A + B > C) and (A + C > B) and (B + C > A):\n",
+        "    perimeter = A + B + C\n",
+        "    print(f\"Perimetro = {perimeter:.1f}\")\n",
+        "else:\n",
+        "    area = ((A + B) * C) / 2\n",
+        "    print(f\"Area = {area:.1f}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0UEmd6qIKP7S",
+        "outputId": "05a1548c-aba1-4e6f-ff1d-09be097adfc6"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2 4 5\n",
+            "Perimetro = 11.0\n"
+          ]
+        }
+      ]
     }
   ]
 }
