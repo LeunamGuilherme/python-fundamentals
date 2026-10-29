@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyM4jB46f2+hGwm/Q2XjQnbo",
+      "authorship_tag": "ABX9TyPN+QvZKhfxoONffbsjXx8Y",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -381,29 +381,97 @@
     {
       "cell_type": "code",
       "source": [
-        "class Ponto:\n",
-        "    def __init__(self, x, y):\n",
-        "        self.x = x\n",
-        "        self.y = y\n",
+        "from enum import Enum\n",
+        "class Cor(Enum):\n",
+        "    VERMELHO = 'vermelho'\n",
+        "    VERDE = 'verde'\n",
+        "    AZUL = 'azul'\n",
         "\n",
-        "def onde_está(ponto):\n",
-        "    match ponto:\n",
-        "        case Ponto(x=0, y=0):\n",
-        "            print(\"Origem\")\n",
-        "        case Ponto(x=0, y=y):\n",
-        "            print(f\"Y={y}\")\n",
-        "        case Ponto(x=x, y=0):\n",
-        "            print(f\"X={x}\")\n",
-        "        case Ponto():\n",
-        "            print(\"Em outro lugar\")\n",
-        "        case _:\n",
-        "            print(\"Não é um ponto\")"
+        "cor = Cor(input(\"Insira sua escolha de 'vermelho, 'azul' ou 'verde': \"))\n",
+        "\n",
+        "match cor:\n",
+        "    case Cor.VERMELHO:\n",
+        "        print(\"Eu vejo vermelho!\")\n",
+        "    case Cor.VERDE:\n",
+        "        print(\"Grama é verde\")\n",
+        "    case Cor.AZUL:\n",
+        "        print(\"O céu é azul :)\")"
       ],
       "metadata": {
-        "id": "n-BBslp1IOJ-"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n-BBslp1IOJ-",
+        "outputId": "5f8d97ee-697b-418b-dcb4-53eaa626f55d"
       },
-      "execution_count": 23,
-      "outputs": []
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Insira sua escolha de 'vermelho, 'azul' ou 'verde': verde\n",
+            "Grama é verde\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def pergunta_ok(mensagem, tentativas=4, lembrete='Por favor, tente novamente!'):\n",
+        "    while True:\n",
+        "        resposta = input(mensagem).strip().lower()\n",
+        "        if resposta in {'s', 'sim', 'é'}:\n",
+        "            return True\n",
+        "        if resposta in {'n', 'não', 'nah', 'nao'}:\n",
+        "            return False\n",
+        "        tentativas = tentativas - 1\n",
+        "        if tentativas < 0:\n",
+        "            print('Limite de tentativas excedido. Resposta assumida como não.')\n",
+        "            return False\n",
+        "        print(lembrete)\n",
+        "\n",
+        "pergunta_ok('Deseja continuar? ')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 480
+        },
+        "id": "6Yei7q2GKONO",
+        "outputId": "21de7d38-8747-4742-abd2-fc535a448f0c"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "mensagem0\n",
+            "Por favor, tente novamente!\n",
+            "mensagemmensagem\n",
+            "Por favor, tente novamente!\n",
+            "mensagemmensagem\n",
+            "Por favor, tente novamente!\n",
+            "mensagem1\n",
+            "Por favor, tente novamente!\n",
+            "mensagem2\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "ValueError",
+          "evalue": "resposta inválida de usuário",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_6479/3288378042.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     11\u001b[0m         \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mlembrete\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     12\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 13\u001b[0;31m \u001b[0mpergunta_ok\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'mensagem'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;32m/tmp/ipykernel_6479/3288378042.py\u001b[0m in \u001b[0;36mpergunta_ok\u001b[0;34m(mensagem, tentativas, lembrete)\u001b[0m\n\u001b[1;32m      8\u001b[0m         \u001b[0mtentativas\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mtentativas\u001b[0m \u001b[0;34m-\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mtentativas\u001b[0m \u001b[0;34m<\u001b[0m \u001b[0;36m0\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 10\u001b[0;31m             \u001b[0;32mraise\u001b[0m \u001b[0mValueError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'resposta inválida de usuário'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     11\u001b[0m         \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mlembrete\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     12\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mValueError\u001b[0m: resposta inválida de usuário"
+          ]
+        }
+      ]
     }
   ]
 }
