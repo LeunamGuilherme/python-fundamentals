@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyM7F/9vX6KTymk1exerFZY8",
+      "authorship_tag": "ABX9TyOgv7VBrkgIgrTF1soNKtU0",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -690,20 +690,86 @@
     {
       "cell_type": "code",
       "source": [
-        "try:\n",
-        "    # O Python TENTA executar este bloco\n",
-        "    age = int(input(\"Type your age: \"))\n",
-        "    print(f\"Your age is: {age}\")\n",
+        "while True:\n",
+        "    try:\n",
+        "        # O Python TENTA executar este bloco\n",
+        "        age = int(input(\"Type your age: \"))\n",
+        "        print(f\"Your age is: {age}\")\n",
+        "        break  # Sai do loop se a conversão der certo\n",
         "\n",
-        "except ValueError:\n",
-        "    # Se o usuário digitar letras, o programa cai aqui em vez de quebrar!\n",
-        "    print(\"Invalid input! Please enter a valid number.\")"
+        "    except ValueError:\n",
+        "        # Se o usuário digitar letras, o programa cai aqui e continua o loop\n",
+        "        print(\"Invalid input! Please enter a valid number.\\n\")"
       ],
       "metadata": {
-        "id": "zGHa1DsjXIhG"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zGHa1DsjXIhG",
+        "outputId": "3037f292-3a3e-4147-9dca-ad9f5b9c273d"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Type your age: cinco\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: seis\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: seven\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: age\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: eight\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: nine\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: ten\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: eleven\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: twelve\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: thirteen\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: fourteen\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: fifteen\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: sixteen\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: seventeen\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: eighteen\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: nineteen\n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: twenty \n",
+            "Invalid input! Please enter a valid number.\n",
+            "\n",
+            "Type your age: 20\n",
+            "Your age is: 20\n"
+          ]
+        }
+      ]
     },
     {
       "cell_type": "code",
