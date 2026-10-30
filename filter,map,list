@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyM3LaTrBqTlkTAswclzqRYB",
+      "authorship_tag": "ABX9TyM7F/9vX6KTymk1exerFZY8",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -631,6 +631,104 @@
           ]
         }
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from enum import Enum\n",
+        "\n",
+        "\n",
+        "class Cor(Enum):\n",
+        "    VERMELHO = 'vermelho'\n",
+        "    VERDE = 'verde'\n",
+        "    AZUL = 'azul'\n",
+        "\n",
+        "\n",
+        "user_input = input(\"Insira sua escolha ('vermelho', 'verde' ou 'azul'): \").strip().lower()\n",
+        "\n",
+        "try:\n",
+        "    cor = Cor(user_input)\n",
+        "\n",
+        "    match cor:\n",
+        "        case Cor.VERMELHO:\n",
+        "            print(\"Eu vejo vermelho!\")\n",
+        "        case Cor.VERDE:\n",
+        "            print(\"Grama é verde\")\n",
+        "        case Cor.AZUL:\n",
+        "            print(\"O céu é azul :)\")\n",
+        "except ValueError:\n",
+        "    print(\"Opção inválida! Escolha entre 'vermelho', 'verde' ou 'azul'.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Yg2GG3WkVZMF",
+        "outputId": "3a729fe6-2172-4882-8436-d591062efe3f"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Insira sua escolha ('vermelho', 'verde' ou 'azul'): amarelo\n",
+            "Opção inválida! Escolha entre 'vermelho', 'verde' ou 'azul'.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "IommdthYXB-2"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "try:\n",
+        "    # O Python TENTA executar este bloco\n",
+        "    age = int(input(\"Type your age: \"))\n",
+        "    print(f\"Your age is: {age}\")\n",
+        "\n",
+        "except ValueError:\n",
+        "    # Se o usuário digitar letras, o programa cai aqui em vez de quebrar!\n",
+        "    print(\"Invalid input! Please enter a valid number.\")"
+      ],
+      "metadata": {
+        "id": "zGHa1DsjXIhG"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from enum import Enum\n",
+        "class Cor(Enum):\n",
+        "    VERMELHO = 'vermelho'\n",
+        "    VERDE = 'verde'\n",
+        "    AZUL = 'azul'\n",
+        "\n",
+        "cor = Cor(input(\"Insira sua escolha de 'vermelho, 'azul' ou 'verde': \"))\n",
+        "\n",
+        "match cor:\n",
+        "    case Cor.VERMELHO:\n",
+        "        print(\"Eu vejo vermelho!\")\n",
+        "    case Cor.VERDE:\n",
+        "        print(\"Grama é verde\")\n",
+        "    case Cor.AZUL:\n",
+        "        print(\"O céu é azul :)\")"
+      ],
+      "metadata": {
+        "id": "CJIVDwQLVdxV"
+      },
+      "execution_count": null,
+      "outputs": []
     }
   ]
 }
