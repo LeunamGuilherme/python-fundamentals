@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNnNjCoQZioGsOlX4j1rxbf",
+      "authorship_tag": "ABX9TyM3LaTrBqTlkTAswclzqRYB",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -323,7 +323,7 @@
         "id": "nM1A_EYwCL8_",
         "outputId": "deb7076a-8ab9-40e9-c7f6-59be61c7983a"
       },
-      "execution_count": 6,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "error",
@@ -366,7 +366,7 @@
         "id": "Sh9Z9MfMC-KN",
         "outputId": "26b2220f-1513-4152-919d-3bef61186237"
       },
-      "execution_count": 22,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "error",
@@ -377,6 +377,50 @@
           ]
         }
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dia = 1\n",
+        "\n",
+        "dias_da_semana = {\n",
+        "    1: \"Domingo\",\n",
+        "    2: \"Segunda-feira\",\n",
+        "    3: \"Terça-feira\",\n",
+        "    4: \"Quarta-feira\",\n",
+        "    5: \"Quinta-feira\",\n",
+        "    6: \"Sexta-feira\",\n",
+        "    7: \"Sábado\"\n",
+        "}\n",
+        "\n",
+        "print(dias_da_semana.get(dia, \"Dia inválido\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h-g233U6VExI",
+        "outputId": "1667c757-44a3-40ac-f5a0-a0c40a7a7d26"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Domingo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "wjsU-jB3VGBV"
+      },
+      "execution_count": null,
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -404,7 +448,7 @@
         "id": "n-BBslp1IOJ-",
         "outputId": "5f8d97ee-697b-418b-dcb4-53eaa626f55d"
       },
-      "execution_count": 27,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -441,7 +485,7 @@
         "id": "6Yei7q2GKONO",
         "outputId": "658cd700-476b-4fc5-f037-2524170c7574"
       },
-      "execution_count": 42,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -507,7 +551,7 @@
         "id": "0UEmd6qIKP7S",
         "outputId": "05a1548c-aba1-4e6f-ff1d-09be097adfc6"
       },
-      "execution_count": 2,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -539,7 +583,7 @@
         "id": "1zZmbYxqLBuR",
         "outputId": "ddbbe735-b360-42c5-e355-b3f188e5fa27"
       },
-      "execution_count": 19,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -547,6 +591,43 @@
           "text": [
             "1 2 3 4 5 \n",
             "2 valores pares\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "\n",
+        "while True:\n",
+        "    number = [ A + 1\n",
+        "    A + 2\n",
+        "    A + 3\n",
+        "    A + 4\n",
+        "    A + 5\n",
+        "    A + 6\n",
+        "    ]\n",
+        "\n",
+        "if number % 2 = 1:\n",
+        "    print(number)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 111
+        },
+        "id": "7L8xcIqQPwEK",
+        "outputId": "5cf9e70b-cc29-483d-bbbf-71024ad030b5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax. Perhaps you forgot a comma? (205734821.py, line 4)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_953/205734821.py\"\u001b[0;36m, line \u001b[0;32m4\u001b[0m\n\u001b[0;31m    number = [A + 1\u001b[0m\n\u001b[0m              ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax. Perhaps you forgot a comma?\n"
           ]
         }
       ]
