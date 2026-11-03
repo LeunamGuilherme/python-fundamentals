@@ -511,24 +511,7 @@
     },
     {
       "cell_type": "code",
-      "source": [
-        "#Faça um programa que o usuário possa cadastrar n pessoas,\n",
-        "#armazenando seu nome, idade e altura\n",
-        "\n",
-        "pessoas = []\n",
-        "while True:\n",
-        "    decisao = int(input('Digite 1 para cadastrar uma pessoa e 2 para sair: '))\n",
-        "    if decisao == 2:\n",
-        "        break\n",
-        "\n",
-        "    nome = input('Digite o nome: ')\n",
-        "    idade = input('Digite a idade: ')\n",
-        "    altura = input('Digite a altura: ')\n",
-        "    pessoa = {'nome': nome, 'idade': idade, 'altura': altura}\n",
-        "    pessoas.append(pessoa)\n",
-        "\n",
-        "print(pessoas)"
-      ],
+      "source": [],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
