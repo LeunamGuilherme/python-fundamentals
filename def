@@ -120,6 +120,15 @@
       ]
     },
     {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "drahZY_s1O2Z"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
       "cell_type": "markdown",
       "source": [],
       "metadata": {
@@ -446,7 +455,7 @@
         "id": "2IaPJWGeC6sW",
         "outputId": "4a60d0b1-51a9-465d-f85e-8cb0394b92ae"
       },
-      "execution_count": 8,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "error",
@@ -485,7 +494,7 @@
         "id": "xeyKUZ32OS3v",
         "outputId": "33453f45-7cc7-4b05-b8b5-ad49db4465b7"
       },
-      "execution_count": 10,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -528,7 +537,7 @@
         "id": "nX0oSWkxP4qX",
         "outputId": "720e6628-8d3e-446f-ea34-e14d0a8ca4a7"
       },
-      "execution_count": 14,
+      "execution_count": null,
       "outputs": [
         {
           "name": "stdout",
@@ -587,26 +596,19 @@
         "print(pessoas)\n"
       ],
       "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "2ZeHRh_fRiK3",
-        "outputId": "1f1b6910-50ae-46ee-b08a-8ee552057d7c"
+        "id": "2ZeHRh_fRiK3"
       },
       "execution_count": null,
-      "outputs": [
-        {
-          "name": "stdout",
-          "output_type": "stream",
-          "text": [
-            "type 1 for continue or 2 for stop: 2\n"
-          ]
-        }
-      ]
+      "outputs": []
     },
     {
       "cell_type": "code",
-      "source": [],
+      "source": [
+        "def soma_numeros(n1,n2):\n",
+        "  print(n1 + n2)\n",
+        "\n",
+        "soma_numeros(5,2)"
+      ],
       "metadata": {
         "id": "QXa4rpk6UzJ4"
       },
