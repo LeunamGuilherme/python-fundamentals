@@ -579,22 +579,7 @@
     },
     {
       "cell_type": "code",
-      "source": [
-        "pessoas = []\n",
-        "while True:\n",
-        "  decisao = int(input('type 1 for continue or 2 for stop: '))\n",
-        "  if decisao == 2:\n",
-        "    break\n",
-        "\n",
-        "nome = input('Your name: ')\n",
-        "idade = input('Your Age: ')\n",
-        "altura = input('Your height: ')\n",
-        "pessoa = {'name': nome, 'age': idade, 'Height': altura}\n",
-        "\n",
-        "pessoas.append(pessoa)\n",
-        "\n",
-        "print(pessoas)\n"
-      ],
+      "source": [],
       "metadata": {
         "id": "2ZeHRh_fRiK3"
       },
@@ -603,12 +588,7 @@
     },
     {
       "cell_type": "code",
-      "source": [
-        "def soma_numeros(n1,n2):\n",
-        "  print(n1 + n2)\n",
-        "\n",
-        "soma_numeros(5,2)"
-      ],
+      "source": [],
       "metadata": {
         "id": "QXa4rpk6UzJ4"
       },
