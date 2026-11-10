@@ -1,0 +1,262 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNuIub5bD8phf9lU9pJUSsX",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LeunamGuilherme/python-fundamentals/blob/main/odd%2C%20even\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0lNBlmsdTosi",
+        "outputId": "baf58bb2-0718-4adc-abed-87725de05283"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "5\n",
+            "Nao sao Multiplos\n"
+          ]
+        }
+      ],
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "if A % B == 0 or B % A == 0:\n",
+        "    print(\"Sao Multiplos\")\n",
+        "elif A % B != 0 or B % A != 0:\n",
+        "    print(\"Nao sao Multiplos\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "start, end = map(int, input().split())\n",
+        "if start >= end:\n",
+        "    duration = (24 - start) + end\n",
+        "else:\n",
+        "    duration = (end - start)\n",
+        "\n",
+        "print(f\"O JOGO DUROU {duration} HORA(S)\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_9EOfxG9Xq4x",
+        "outputId": "da088d1e-53bf-4e0c-8aaf-a79d5ca6ba53"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "16 20\n",
+            "O JOGO DUROU 4 HORA(S)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "C = int(input())\n",
+        "D = int(input())\n",
+        "E = int(input())\n",
+        "\n",
+        "numbers = [A, B, C, D, E]\n",
+        "\n",
+        "# Conta quantos números atendem a cada condição\n",
+        "even = sum(1 for x in numbers if x % 2 == 0)\n",
+        "odd = sum(1 for x in numbers if x % 2 != 0)\n",
+        "positive = sum(1 for x in numbers if x > 0)\n",
+        "negative = sum(1 for x in numbers if x < 0)\n",
+        "\n",
+        "print(f\"{even} valor(es) par(es)\")\n",
+        "print(f\"{odd} valor(es) impar(es)\")\n",
+        "print(f\"{positive} valor(es) positivo(s)\")\n",
+        "print(f\"{negative} valor(es) negativo(s)\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ff7KASNhZuxi",
+        "outputId": "cd787c22-699c-41ae-b553-409e5380ecae"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "2 valor(es) par(es)\n",
+            "3 valor(es) impar(es)\n",
+            "5 valor(es) positivo(s)\n",
+            "0 valor(es) negativo(s)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Recebe o número limite X\n",
+        "X = int(input())\n",
+        "\n",
+        "# Gera e exibe apenas os números ímpares de 1 até X\n",
+        "for y in range(1, X + 1):\n",
+        "    if y % 2 != 0:\n",
+        "        print(y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cYee5yNifiSl",
+        "outputId": "c5aabb57-aba3-470e-d232-7da9812cc518"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n",
+            "1\n",
+            "3\n",
+            "5\n",
+            "7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "X = int(input())\n",
+        "\n",
+        "for y in range(1, X + 1):\n",
+        "  if y % 2 != 0:\n",
+        "    print(y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xFeorbn1c1oj",
+        "outputId": "9865c438-493e-417c-915a-2cb7aea093a4"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9\n",
+            "1\n",
+            "3\n",
+            "5\n",
+            "7\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "X = int(input())\n",
+        "for y in range(X, X + 12):\n",
+        "  if y % 2 != 0:\n",
+        "    print(y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V5Ll4ylOh5MY",
+        "outputId": "5a929f1c-1c96-462c-d49a-fcf64099e512"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n",
+            "9\n",
+            "11\n",
+            "13\n",
+            "15\n",
+            "17\n",
+            "19\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "C = int(input())\n",
+        "D = int(input())\n",
+        "E = int(input())\n",
+        "\n",
+        "number = A,B,C,D,E\n",
+        "\n",
+        "even = number % 2 = 0\n",
+        "odd = number % 2 != 0\n",
+        "positive = number > 0\n",
+        "negative = number < 0\n",
+        "\n",
+        "print(f\"{even} valor(es) par(es)\")\n",
+        "print(f\"{odd} valor(es) impar(es)\")\n",
+        "print(f\"{positive} valor(es) positivo(s)\")\n",
+        "print(f\"{negative} valor(es) negativo(s)\")"
+      ],
+      "metadata": {
+        "id": "2LKWfzE2aqOC"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
