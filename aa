@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNP4Tb8OuEH1k+G8RDZsmJA",
+      "authorship_tag": "ABX9TyOAXDzgCjm0lKjOOLi09GaC",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -85,6 +85,61 @@
           ]
         }
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "C = int(input())\n",
+        "D = int(input())\n",
+        "E = int(input())\n",
+        "\n",
+        "numbers = [A, B, C, D, E]\n",
+        "\n",
+        "# Conta quantos números atendem a cada condição\n",
+        "even = sum(1 for x in numbers if x % 2 == 0)\n",
+        "odd = sum(1 for x in numbers if x % 2 != 0)\n",
+        "positive = sum(1 for x in numbers if x > 0)\n",
+        "negative = sum(1 for x in numbers if x < 0)\n",
+        "\n",
+        "print(f\"{even} valor(es) par(es)\")\n",
+        "print(f\"{odd} valor(es) impar(es)\")\n",
+        "print(f\"{positive} valor(es) positivo(s)\")\n",
+        "print(f\"{negative} valor(es) negativo(s)\")"
+      ],
+      "metadata": {
+        "id": "Ff7KASNhZuxi"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = int(input())\n",
+        "C = int(input())\n",
+        "D = int(input())\n",
+        "E = int(input())\n",
+        "\n",
+        "number = A,B,C,D,E\n",
+        "\n",
+        "even = number % 2 = 0\n",
+        "odd = number % 2 != 0\n",
+        "positive = number > 0\n",
+        "negative = number < 0\n",
+        "\n",
+        "print(f\"{even} valor(es) par(es)\")\n",
+        "print(f\"{odd} valor(es) impar(es)\")\n",
+        "print(f\"{positive} valor(es) positivo(s)\")\n",
+        "print(f\"{negative} valor(es) negativo(s)\")"
+      ],
+      "metadata": {
+        "id": "2LKWfzE2aqOC"
+      },
+      "execution_count": null,
+      "outputs": []
     }
   ]
 }
