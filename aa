@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMI1yi4crH8XCLArtVeMixZ",
+      "authorship_tag": "ABX9TyNP4Tb8OuEH1k+G8RDZsmJA",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -54,6 +54,36 @@
         "    print(\"Sao Multiplos\")\n",
         "elif A % B != 0 or B % A != 0:\n",
         "    print(\"Nao sao Multiplos\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "start, end = map(int, input().split())\n",
+        "if start >= end:\n",
+        "    duration = (24 - start) + end\n",
+        "else:\n",
+        "    duration = (end - start)\n",
+        "\n",
+        "print(f\"O JOGO DUROU {duration} HORA(S)\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_9EOfxG9Xq4x",
+        "outputId": "da088d1e-53bf-4e0c-8aaf-a79d5ca6ba53"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "16 20\n",
+            "O JOGO DUROU 4 HORA(S)\n"
+          ]
+        }
       ]
     }
   ]
