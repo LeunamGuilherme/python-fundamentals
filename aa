@@ -109,10 +109,30 @@
         "print(f\"{negative} valor(es) negativo(s)\")"
       ],
       "metadata": {
-        "id": "Ff7KASNhZuxi"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ff7KASNhZuxi",
+        "outputId": "a5ce48aa-e4b0-446e-b9be-ef831184a531"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "-5\n",
+            "0\n",
+            "-3\n",
+            "-4\n",
+            "12\n",
+            "3 valor(es) par(es)\n",
+            "2 valor(es) impar(es)\n",
+            "1 valor(es) positivo(s)\n",
+            "3 valor(es) negativo(s)\n"
+          ]
+        }
+      ]
     },
     {
       "cell_type": "code",
