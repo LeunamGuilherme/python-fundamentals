@@ -371,7 +371,7 @@
         "NUMBER = A\n",
         "SALARY = B*C\n",
         "\n",
-        "print(f'NUMBER = {NUMBER}')\n",
+        "print(f'NUMBER = {NUMBER}')123\n",
         "print(f'SALARY = U$ {SALARY:.2f}')"
       ],
       "metadata": {
